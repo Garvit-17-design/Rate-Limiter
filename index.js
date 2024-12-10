@@ -7,6 +7,7 @@ const { initializeDatabaseConnection } = require("./src/lib/database/mongo");
 const { connectRedis } = require("./src/lib/database/redis");
 const authRoutes = require("./src/routes/authentication");
 const validationRoutes = require("./src/routes/validate");
+const customerRoutes = require("./routes/customer");
 
 const app = express();
 app.use(express.json());
@@ -21,3 +22,4 @@ app.listen(PORT, async () => {
 // Use authentication routes
 app.use("/api/auth", authRoutes);
 app.use("/api/rate-limit", validationRoutes);
+app.use("/api/customers", customerRoutes);
