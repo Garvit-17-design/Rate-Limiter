@@ -1,0 +1,22 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "In a modern web environment, managing the rate of incoming requests is crucial for maintaining the performance and security of web applications. This project focuses on implementing a rate limiter using a combination of Node.js, Redis, and MongoDB. The goal is to design system that prevents abuse by limiting the number of requests a user or client can make to a server within a specific time frame.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Garvit Arora",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.2",
+    "config": "^3.3.12",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "rate-limiter": "file:"
+  }
+}
